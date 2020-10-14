@@ -1,13 +1,11 @@
 import React from 'react';
-import { links } from './components/NavBar/links';
-import Logo from './components/NavBar/Logo';
-import NavBar from './components/NavBar/NavBar';
-
+import './App.css';
 
 function App() {
   return (
-    <NavBar logo={Logo} links={links} actionBtn="BOOK ONLINE"/>
-    
+    <div className="App">
+      Walk Way Nail Salon
+    </div>
   );
 }
 
