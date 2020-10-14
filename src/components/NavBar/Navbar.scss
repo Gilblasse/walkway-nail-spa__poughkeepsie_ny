@@ -1,0 +1,51 @@
+.NavBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+
+    #Logo{
+        font-family: CandelionBold;
+        font-size: 36px;
+        letter-spacing: 2px;
+        // line-height: 36px;
+        color: #323232;
+
+        .subHeader{
+            font-family: CandelionRegular;
+            font-size: 21px;
+            text-align: end;
+            // margin-top: -10px;
+        }
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+
+        li{
+            &:not(:last-child){
+                margin-right: 70px;
+            }
+
+            a{
+                text-decoration: none;
+                color: #000000
+            }
+        }
+    }
+
+
+    button{
+        border: none;
+        padding: 15px;
+        background-color: #fff;
+        font-size: 16px;
+
+        &:hover{
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
