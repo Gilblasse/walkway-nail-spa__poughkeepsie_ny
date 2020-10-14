@@ -10,15 +10,18 @@ export default function NavBar(props) {
            <Logo/>
             <ul>
                 {
-                    links.map(link => (
-                        <li>
+                    links.map((link,i) => (
+                        <li key={i}>
                             <a href={link.location}>{link.name}</a>
                         </li>
                     ))
                 }
             </ul>
             <div>
-                <button> <MoreHorizIcon/> Book Online</button>
+                <button> 
+                    <MoreHorizIcon/> 
+                    <span>Book Online</span>
+                </button>
             </div>
         </nav>
     )
