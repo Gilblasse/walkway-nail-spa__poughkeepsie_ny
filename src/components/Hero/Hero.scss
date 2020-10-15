@@ -1,0 +1,51 @@
+#Hero{
+    height: 600px;
+    width: 100vw;
+    background-color: #333;
+    position: relative;
+
+
+    .hero-inner-wrapper{
+        transform: translateY(22%);
+        padding-left: 12%;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 50px;
+
+        .hero-main p{
+            &:first-child{
+                font-size: 5rem;
+            }
+
+            span{
+                display: block;
+            }
+        }
+    
+        .store-hours{
+            transform: rotate(90deg);
+        }
+
+        .hero-action-btn{
+            background-color: #000;
+            color: #fff;
+            margin-top: 10px;
+
+            &:hover{
+                background-color: #fff;
+                color: #000;
+            }
+        }
+
+    }
+}
+
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    overflow: hidden;
+    line-height: 0;
+}
