@@ -3,6 +3,7 @@ import Logo from './Logo'
 import {links} from './links'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import './Navbar.scss';
+import ActionBtn from '../ActionBtn/ActionBtn';
 
 export default function NavBar(props) {
     return (
@@ -18,10 +19,7 @@ export default function NavBar(props) {
                 }
             </ul>
             <div>
-                <button> 
-                    <MoreHorizIcon/> 
-                    <span>Book Online</span>
-                </button>
+                <ActionBtn title="BOOK ONLINE" className="nav-action-btn"/>
             </div>
         </nav>
     )

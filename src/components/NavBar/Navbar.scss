@@ -36,21 +36,10 @@
     }
 
 
-    button{
-        border: none;
-        padding: 15px;
-        background-color: #fff;
-        font-size: 16px;
-        display: flex;
-
-        span{
-            margin-left: 5px;
-        }
-
+    .nav-action-btn{
         &:hover{
             background-color: #000;
             color: #fff;
-            cursor: pointer;
         }
     }
 }
