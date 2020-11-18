@@ -1,8 +1,12 @@
 #Hero{
-    height: 600px;
+    height: 700px;
     width: 100vw;
     background-color: #333;
     position: relative;
+    background-image: url(brnGreen-nails-brnish-bkg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
     .hero-inner-wrapper{
@@ -44,8 +48,15 @@
 .custom-shape-divider-bottom {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right:0;
     overflow: hidden;
     line-height: 0;
+    width: 100%;
+}
+
+#pageHero{
+    background-color: #333;
+    padding: 5pc;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #fff;
 }
