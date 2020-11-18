@@ -1,26 +1,22 @@
 export const links = [
     {
         name: 'Home',
-        location: '#'
+        location: '/'
     },
     {
         name: 'About',
-        location: '#'
+        location: '/about'
     },
     {
         name: 'Services',
-        location: '#'
+        location: '/services'
     },
     {
         name: 'Lookbook',
-        location: '#'
-    },
-    {
-        name: 'News',
-        location: '#'
+        location: '/lookbook'
     },
     {
         name: 'Contact',
-        location: '#'
+        location: '/contact'
     },
 ]

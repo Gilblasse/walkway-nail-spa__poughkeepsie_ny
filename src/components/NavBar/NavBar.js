@@ -1,26 +1,38 @@
 import React from 'react'
 import Logo from './Logo'
 import {links} from './links'
-import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import './Navbar.scss';
 import ActionBtn from '../ActionBtn/ActionBtn';
+import { Link } from "react-router-dom";
+import { withRouter } from "react-router";
 
-export default function NavBar(props) {
+
+function NavBar({history}) {
+
+    const handleClick = ()=> {
+        // console.log({id: process.env.REACT_APP_NYLAS_CLIENT_ID})
+        console.log({history})
+        history.push('/book-appointment')
+    }
+
+
     return (
         <nav className="NavBar">
            <Logo/>
             <ul>
                 {
-                    links.map((link,i) => (
+                    links.map(({name, location},i) => (
                         <li key={i}>
-                            <a href={link.location}>{link.name}</a>
+                            <Link to={location}>{name}</Link>
                         </li>
                     ))
                 }
             </ul>
-            <div>
+            <div onClick={handleClick}>
                 <ActionBtn title="BOOK ONLINE" className="nav-action-btn"/>
             </div>
         </nav>
     )
 }
+
+export default withRouter(NavBar)
