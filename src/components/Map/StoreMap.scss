@@ -1,0 +1,28 @@
+// 1.79rem
+$location-icon-size: 2rem;
+
+
+.marker-icon{
+    position: relative;
+    color: white;
+    transform-style: preserve-3d;
+
+    svg{
+        position: absolute;
+    }
+
+    svg:nth-child(1){
+        top: -.9pc;
+        font-size: $location-icon-size;
+    }
+
+    svg:nth-child(2){
+        left: .1pc;
+        font-size: $location-icon-size - .29rem;
+        transform: rotate3d(8, 1, -2, 50deg);
+    }
+}
+
+.mapboxgl-ctrl-logo{
+    display: none !important;    
+}
