@@ -1,0 +1,26 @@
+#CouponSection{
+    background: linear-gradient(156deg, rgba(255,255,255,0.4925945378151261) 40%, rgba(0,212,255,0) 100%), url('./nails-pink-bkg.jpg');
+    padding: 6pc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    h3{
+        margin: 15px 0;
+        font-size: 2em;
+    
+        p {
+            font-weight: 400;
+
+            .coupon-precentage{
+                font-family: 'CinzelBold';
+            }
+        }
+
+    }
+
+    button{
+        color: black;
+    }
+}
