@@ -1,0 +1,152 @@
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    font-size: 13px;
+    font-family: 'muli';
+    padding: 3pc 0; 
+
+    .col1{
+        width: 13.5pc;
+        font-size: 14px;
+
+
+        ul{
+            display: flex;
+            list-style: none;
+            margin-top: 12px;
+
+            li{
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .columns {
+        .footer-nav-links{
+            list-style: none;
+
+            li{
+                cursor: pointer;
+
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+
+                &:hover{
+                    a{
+                        text-decoration: underline;
+                    }
+                }
+
+
+                a{
+                    text-decoration: none;
+                    color: gray;
+                }
+    
+            }
+        }
+    }
+
+    .contact-info{
+        list-style: none;
+        
+        li{
+            display: flex;
+
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+            
+            span {
+                margin-right: 15px;
+                display: flex;
+                align-items: center;
+
+                svg{
+                    font-size: 13px;
+                }
+            }
+
+            .contact-email-logo{
+                transform: rotate(325deg);
+            }
+
+        }
+    }
+
+    .footer-lookbook{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 12pc;
+
+        li{
+            margin-bottom: 6px;
+            border-radius: 5px;
+
+            .footer-img-container{
+                width: 60px;
+                height: 60px;
+                border-radius: 3px;
+                background-color: gray;
+                position: relative;
+                overflow: hidden;
+
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+
+                .img-overlay{
+                    position: absolute;
+                    top:0;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: black;
+                    opacity: .5;
+                    transition: opacity .3s ease-in;
+                }
+            }
+
+            &:hover{
+                cursor: pointer;
+
+                .img-overlay{
+                    opacity: 0;
+                }
+            }
+        }
+        
+    }
+}
+
+.subfooter{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    font-size: 13px;
+    font-family: 'muli';
+    padding: 15px 15%;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    background-color: #000;
+
+    ul{
+        list-style: none;
+        display: flex;
+
+        li{
+            cursor: pointer;
+            
+            &:not(:last-child){
+                margin-right: 42px;
+            }
+        }
+    }
+}
