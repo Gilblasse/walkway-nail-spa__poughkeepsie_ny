@@ -1,0 +1,13 @@
+.SocialMediaIcon{
+    background-color:white;
+    color: #6b6b6b;
+    display: flex;
+    border-radius: 100%;
+    padding: 9px;
+    opacity: .3;
+    cursor: pointer;
+
+    .MuiSvgIcon-root{
+        font-size: 15px;
+    }
+}
