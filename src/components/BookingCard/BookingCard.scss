@@ -1,0 +1,58 @@
+$imgSize: 6pc;
+
+.BookingCard{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 11px;
+    border: 1px solid gray;
+    width: 28pc;
+    border-radius: 0.8pc;
+    cursor: pointer;
+    justify-content: space-between;
+
+    .card-container{
+
+        display: flex;
+        align-items: center;
+
+        .profile-container{
+            overflow: hidden;
+            width: $imgSize;
+            height: $imgSize;
+            border-radius: 100%;
+            
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                transition: all .2s ease-in-out;
+            }
+        }
+    
+        .profile-info{
+            padding-left: 2pc;
+            color: gray;
+        }
+
+    }
+
+
+    .arrow-container svg{
+        color: gray;
+    }
+    
+
+    &:hover{
+        -webkit-box-shadow: 5px 5px 16px -10px #000000; 
+        box-shadow: 5px 5px 16px -10px rgba(0,0,0,.3);
+
+        // .profile-container img{
+        //     transform: scale(1.1);
+        // }
+
+        .arrow-container svg, .profile-info{
+            color: #000;
+        }
+    }
+}
