@@ -1,0 +1,17 @@
+.SectionTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5pc;
+    font-family: CinzelRegular;
+
+    h3{
+        font-size: 2.4rem;
+    }
+
+    hr{
+        width: 2pc;
+        height: .3pc;
+        background-color: black;
+    }
+}
