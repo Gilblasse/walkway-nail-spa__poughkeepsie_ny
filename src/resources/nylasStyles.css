@@ -1,0 +1,63 @@
+/*
+Note: CSS doesn't have any concept of namespaces, so it's important that we namespace
+all of our CSS selectors. For example, ".hidden" could already have all sorts of global
+styles on the page (it does in Bootstrap), so we use ".nylas-hidden".
+*/
+.nylas-backdrop {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(110, 110, 110, 0.35);
+    z-index: 10000;
+  
+    opacity: 1;
+    transition: opacity 200ms linear;
+  }
+  .nylas-backdrop.nylas-hidden {
+    opacity: 0;
+  }
+  
+  .nylas-backdrop .nylas-modal {
+    width: 960px;
+    height: 520px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    border: 0;
+    transform: translateY(0) rotateX(0);
+    transition: transform 200ms linear;
+  }
+  .nylas-backdrop.nylas-hidden .nylas-modal {
+    transform: translateY(10px) rotateX(-7deg);
+  }
+  
+  .nylas-modal iframe {
+    width: 962px;
+    height: 522px;
+    opacity: 0;
+    border-radius: 7px;
+    border: 0;
+    transition: opacity 175ms linear;
+    box-sizing: border-box;
+  }
+  .nylas-modal.nylas-ready iframe {
+    opacity: 1;
+  }
+  
+  .nylas-modal .nylas-spinner {
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 175ms linear;
+    filter: invert(1) saturate(0);
+    -webkit-filter: invert(1) saturate(0);
+  }
+  .nylas-modal.nylas-ready .nylas-spinner {
+    opacity: 0;
+  }
