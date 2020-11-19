@@ -1,0 +1,92 @@
+$priceContainerSize: 0 5pc;
+
+
+.Service-card{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding: $priceContainerSize;
+    background: #333;
+
+    &:not(:last-child){
+        margin-bottom: 15pc;
+    }
+    
+
+    .img-container, .card-overlay{
+        position: absolute;
+        left:0;
+        height: 25pc;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: 0pc -11pc;
+            z-index: 0;
+        }
+    }
+
+
+    .card-overlay{
+        width: 100%;
+        background: linear-gradient(106deg, rgba(0, 0, 0, 0.757581) 10%, rgba(6, 6, 6, 0) 40%);
+        z-index: 5;
+        opacity: .7;
+    }
+
+
+    .card-content{
+        min-height: 40px;
+        position: relative;
+        top: 5pc;
+        color: white;
+        font-size: 2em;
+        z-index: 6;
+
+        button{
+            margin-top: 2pc;
+            background-color: black;
+
+            &:hover{
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+
+    .service-prices-wrapper{
+        position: absolute;
+        display: flex;
+        left: 0;
+        bottom: -140px;
+        width: 100%;
+        height: 15pc;
+        padding: $priceContainerSize;
+        z-index: 8;
+
+        .service-prices{
+            width: 30pc;
+            height: 100%;
+            background-color: #000;
+            padding: 3pc 5pc;
+            color: white;
+            overflow: scroll;
+            
+
+            .service-price{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1pc;
+
+                .service{
+                    color: #aaa
+                }
+
+                .price{
+                    color: white;
+                }
+            }
+        }
+    }
+}
