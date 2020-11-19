@@ -1,0 +1,60 @@
+.StylersSection{
+    padding: 6pc 0;
+
+    .stylistsCards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card{
+        display: inline-block;
+        width: 18pc;
+        height: 23pc;
+        background-color: blue;
+    }
+    
+    .positionRelative{
+        position: relative;
+        height: 100%;
+        background: pink;
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    
+    
+    .cardTitle {
+        bottom: -18px;
+        position: absolute;
+        width: 9pc;
+    
+        .bkg{
+            width: 100%;
+            background: black;
+            height: 45px;
+            position: relative;
+            bottom: -40px;
+            z-index: 0;
+        }
+    
+        h5{
+            text-align: center;
+            z-index: 1;
+            position: relative;
+            color: white;
+        }
+    
+        p{
+            font-size: 12px;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
