@@ -1,0 +1,81 @@
+#ContactPage{
+
+    .map-wrapper{
+        
+    }
+
+
+    .contact-wrapper{
+        padding-top: 8pc;
+        display: flex;
+
+
+        .contact-img-box-contanier{
+            width: 400px;
+            height: 500px;
+            background-color: #333;
+        }
+
+        .contact-form-container{
+            flex-grow: 1;
+            padding-left: 5pc;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            
+            form{
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                // gap: 1em;
+
+                fieldset, input, textarea{
+                    border: none;
+                }
+
+                input, textarea{
+                    background-color: #f4f5f7;
+                }
+
+                .field-section-double{
+                    display: flex;
+                    gap: 1em;
+                    
+                    .field-section{
+                        flex-basis: 50%;
+                        display: flex;
+                        flex-direction: column;
+
+                        input{
+                            height: 2pc;
+                        }
+                    }
+                }
+                
+                label{
+                    font-size: 14px;
+                    font-family: muli;
+                    font-weight: bold;
+                    padding-bottom: 12px;
+                }
+
+                .field-section-message{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .user-message{
+                    width: 100%;
+                    resize: none;
+                }
+
+                .submit-btn{
+                    background-color: black;
+                }
+            }    
+        }
+    }
+    
+
+}
