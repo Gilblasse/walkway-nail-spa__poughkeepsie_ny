@@ -1,11 +1,18 @@
 import React from 'react'
 import './Navbar.scss';
+import { withRouter } from "react-router";
 
-export default function Logo() {
+function Logo({history}) {
+    const handleLogoClick = ()=> {
+        history.push('/')
+    }
+
     return (
-        <div id='Logo'>
+        <div id='Logo' onClick={handleLogoClick}>
             <p>Walkway</p>
             <p className="subHeader">Nail | Spa</p>
         </div>
     )
 }
+
+export default withRouter(Logo)

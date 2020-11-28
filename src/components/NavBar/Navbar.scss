@@ -3,6 +3,8 @@
     justify-content: space-around;
     align-items: center;
     padding: 15px 0;
+    // position: relative;
+
 
     #Logo{
         font-family: CandelionBold;
@@ -22,6 +24,45 @@
         }
     }
 
+    .hamburger-menu {
+        display: none;
+        width: 2.5pc;
+        cursor: pointer;
+
+        &:hover{
+            svg path{
+
+                &:nth-child(1){
+                    d: path('M2 2H14') !important;
+                }
+
+                &:nth-child(2){
+                    d: path('M2 10H35') !important;
+                }
+            }
+        }
+
+        svg path{
+            stroke: black !important;
+            stroke-width: 2 !important;
+            stroke-linecap: round !important;
+            stroke-linejoin: round !important;
+            transition: all .3s ease-in-out;
+
+            &:nth-child(1){
+                d: path('M2 2H35') !important;
+            }
+
+            &:nth-child(2){
+                d: path('M2 10H25') !important;
+            }
+
+            // &:nth-child(3){
+            //     d: path('M2 18H14') !important;
+            // }
+        }
+    }
+
     ul{
         display: flex;
         list-style: none;
@@ -31,9 +72,30 @@
                 margin-right: 70px;
             }
 
+            &:hover{
+                .underline{
+                    width: 100%;
+                }
+            }
+
             a{
                 text-decoration: none;
                 color: #000000
+            }
+
+            .underline{
+                height: 1px;
+                width: 0;
+                background-color: #000; 
+                transform: translateY(8px);
+                transition: width .3s ease;
+            }
+
+        }
+
+        .active{
+            .underline{
+                width: 100%;
             }
         }
     }
@@ -47,5 +109,31 @@
             background-color: #000;
             color: #fff;
         }
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1175px) {
+    .NavBar{
+        justify-content: space-between;
+        padding: 15px 5pc;
+
+        ul, .nav-action-btn{
+            display: none;
+        }
+
+        .hamburger-menu {
+            display: block;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .NavBar{
+        padding: 15px 2pc;
     }
 }
