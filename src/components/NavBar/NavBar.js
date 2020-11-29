@@ -41,7 +41,7 @@ function NavBar({history, match}) {
             </div>
 
             <div className="hamburger-menu" onClick={handleMenuOpen}>
-                <svg width="100%" height="12px">
+                <svg viewBox="0 0 100% 12" width="100%" height="12px">
                     <path />
                     <path />
                     <path />
