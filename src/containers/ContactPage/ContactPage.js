@@ -1,3 +1,4 @@
+import { Grid } from '@material-ui/core'
 import React from 'react'
 import ActionBtn from '../../components/ActionBtn/ActionBtn'
 import Hero from '../../components/Hero/Hero'
@@ -35,28 +36,42 @@ export default function ContactPage() {
                            <form onSubmit={handleSubmit}>
 
                                 <fieldset className="field-section-double">
-                                   <p className="field-section">
-                                        <label htmlFor="user-first-name">Name*</label>
-                                        <input id="user-first-name"/>
-                                   </p>
+                                    <Grid container spacing={2}>
+                                        <Grid item xs={12} sm={6}>
+                                            <p className="field-section">
+                                                <label htmlFor="user-first-name">Name*</label>
+                                                <input id="user-first-name"/>
+                                            </p>
+                                        </Grid>
 
-                                   <p className="field-section">
-                                        <label htmlFor="user-email">Email*</label>
-                                        <input id="user-email"/>
-                                   </p>
+                                        <Grid item xs={12} sm={6}>
+                                            <p className="field-section">
+                                                <label htmlFor="user-email">Email*</label>
+                                                <input id="user-email"/>
+                                            </p>
+                                        </Grid>
+                                    </Grid>
+                                   
                                 </fieldset>
 
 
                                 <fieldset className="field-section-double">
-                                   <p className="field-section">
-                                        <label htmlFor="user-phone-number">Phone*</label>
-                                        <input id="user-phone-number"/>
-                                   </p>
+                                    <Grid container spacing={2}>
 
-                                   <p className="field-section">
-                                        <label htmlFor="user-subject">Subject*</label>
-                                        <input id="user-subject"/>
-                                   </p>
+                                        <Grid item xs={12} sm={6}>
+                                            <p className="field-section">
+                                                <label htmlFor="user-phone-number">Phone*</label>
+                                                <input id="user-phone-number"/>
+                                            </p>
+                                        </Grid>
+
+                                        <Grid item xs={12} sm={6}>
+                                            <p className="field-section">
+                                                <label htmlFor="user-subject">Subject*</label>
+                                                <input id="user-subject"/>
+                                            </p>
+                                        </Grid>
+                                   </Grid>
                                 </fieldset>
                                 
                                 <fieldset className="field-section-message">

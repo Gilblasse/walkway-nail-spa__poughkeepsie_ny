@@ -8,6 +8,7 @@ import WrapperContainer from '../WrapperContainer'
 import VideoPlacemarker from '../../components/VideoSection/VideoPlacemarker'
 import StylersSection from '../../components/StylersSection/StylersSection'
 import './AboutPage.scss'
+import { Grid } from '@material-ui/core'
 
 
 export default function AboutPage() {
@@ -16,31 +17,38 @@ export default function AboutPage() {
             <div id="AboutPage" className="Page"> 
                 
                 <WrapperContainer>
-                    <div className="about-section">  
-                        <SectionTitle 
-                            title={
-                                <div id="about-title">
-                                    <p>welcome to </p> 
-                                    <p>walkway nail spa</p>
+                    <div className="about-section">
+                        <Grid container>
+
+                            <Grid item xs={12} md={6}>
+                                <SectionTitle 
+                                    title={
+                                        <div id="about-title">
+                                            <p>welcome to </p> 
+                                            <p>walkway nail spa</p>
+                                        </div>
+                                    } 
+                                    direction="start" 
+                                    bottomSpace="1pc" 
+                                    underScoreSpace="12px" 
+                                    underScoreHeight=".2pc"
+                                />
+                            </Grid>
+
+                            <Grid item xs={12} md={6}>
+                                <div className="about-description-section">
+                                    <p className="about-description">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                        It has survived not only five centuries, but also the leap into electronic typesetting.
+                                    </p>
+
+                                    <ActionBtn title="Book Now" />
                                 </div>
-                            } 
-                            direction="start" 
-                            bottomSpace="1pc" 
-                            underScoreSpace="12px" 
-                            underScoreHeight=".2pc"
-                        />
+                            </Grid>
 
-                        <div className="about-description-section">
-                            <p className="about-description">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                                It has survived not only five centuries, but also the leap into electronic typesetting.
-                            </p>
-
-                            <ActionBtn title="Book Now" />
-                        </div>
-
+                        </Grid>  
                     </div>
                 </WrapperContainer>
                 

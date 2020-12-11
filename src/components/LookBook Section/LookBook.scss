@@ -5,7 +5,7 @@
         display: grid;
         height: 56pc;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 18pc);
+        grid-template-rows: repeat(3, 18pc); 
         gap: 1em;
 
         .top-left-container{
@@ -82,4 +82,46 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+
+// xs=540px	 s=720px	md=960px	lg=1140px
+@media only screen and (max-width: 960px) {
+    .LookBook{
+    
+        .lookbook-wrapper{ 
+            height: 66pc;
+            grid-template-rows: repeat(6, 10pc);
+            
+            .top-left-container, .top-right-container, .top-center-container,
+            .bottom-left-container,  .bottom-center-container, .bottom-right-container
+            {
+                grid-column: 1 / 4;
+            }
+            
+            .top-left-container{
+                grid-row: 1 / 2;
+            }
+    
+            .top-center-container{
+                grid-row: 2 / 3;
+            }
+    
+            .top-right-container{
+                grid-row: 3 / 4;
+            }
+    
+            .bottom-left-container{
+                grid-row: 4 / 5;
+            }
+    
+            .bottom-center-container{
+                grid-row: 5 / 6;
+            }
+    
+            .bottom-right-container{
+                grid-row: 6 / 7;
+            }
+        }
+    }
 }

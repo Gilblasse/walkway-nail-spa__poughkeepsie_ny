@@ -4,6 +4,7 @@ import beauticianImg from './beautician-icon.svg'
 import salonChairImg from './salonChair.svg'
 import nailPolishingImg from './nail-polish-icon.svg'
 import './ProductServices.scss'
+import { Grid } from '@material-ui/core'
 
 
 export default function ProductServices(props) {
@@ -34,15 +35,19 @@ export default function ProductServices(props) {
 
     return (
         <ul className="ProductServices">
-            {
-                services.map(({img, title, content, ...rest}, i)=>{
-                    return(
-                        <li key={i}>
-                            <ProductService {...rest} productImg={img} productTitle={title} productContent={content}/>
-                        </li>
-                    )
-                })
-            }
+            <Grid container spacing={7}>
+                {
+                    services.map(({img, title, content, ...rest}, i)=>{
+                        return(
+                            <Grid item xs={12} md={4}>
+                                <li key={i}>
+                                    <ProductService {...rest} productImg={img} productTitle={title} productContent={content}/>
+                                </li>
+                            </Grid>
+                        )
+                    })
+                }
+            </Grid>
         </ul>
     )
 }

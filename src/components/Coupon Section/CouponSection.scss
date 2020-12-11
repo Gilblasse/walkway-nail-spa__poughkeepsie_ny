@@ -24,3 +24,21 @@
         color: black;
     }
 }
+
+
+
+// xs=540px	 s=720px	md=960px	lg=1140px
+@media only screen and (max-width: 540px) {
+    #CouponSection{
+        padding: 4pc;
+
+        h3{
+            font-size: 1.8em;
+        
+            // p {
+                
+            // }
+    
+        }
+    }
+}

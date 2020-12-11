@@ -1,4 +1,5 @@
 $priceContainerSize: 0 5pc;
+$priceContainerSizeSm: 0 2pc;
 
 
 .Service-card{
@@ -21,8 +22,9 @@ $priceContainerSize: 0 5pc;
 
         img{
             width: 100%;
+            height: 100%;
             object-fit: cover;
-            object-position: 0pc -11pc;
+            // object-position: 0pc -11pc;
             z-index: 0;
         }
     }
@@ -30,7 +32,7 @@ $priceContainerSize: 0 5pc;
 
     .card-overlay{
         width: 100%;
-        background: linear-gradient(106deg, rgba(0, 0, 0, 0.757581) 10%, rgba(6, 6, 6, 0) 40%);
+        background: linear-gradient(106deg, rgba(0, 0, 0, 0.757581) 10%, rgba(6, 6, 6, 0) 75%);
         z-index: 5;
         opacity: .7;
     }
@@ -86,6 +88,33 @@ $priceContainerSize: 0 5pc;
                 .price{
                     color: white;
                 }
+            }
+        }
+    }
+}
+
+
+
+// xs=540px	 s=720px	md=960px	lg=1140px
+@media only screen and (max-width: 960px) {
+    
+    .Service-card{
+        padding: $priceContainerSizeSm;
+
+        .service-prices-wrapper{
+            padding: $priceContainerSizeSm;
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    
+    .Service-card{
+        padding: $priceContainerSizeSm;
+        
+        .service-prices-wrapper{
+            .service-prices{
+                padding: 2pc;
             }
         }
     }

@@ -2,14 +2,14 @@
     padding: 6pc 0;
 
     .stylistsCards{
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
     }
 
     .card{
         display: inline-block;
         width: 18pc;
-        height: 23pc;
+        height: 24pc;
         background-color: blue;
     }
     
@@ -57,4 +57,40 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+// xs=540px	 s=720px	md=960px	lg=1140px
+@media only screen and (max-width: 1300px) {
+
+    .StylersSection{
+        .card{
+            width: 15pc;
+            height: 21pc;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+
+    .StylersSection{
+        text-align: center;
+        .card{
+            width: 18pc;
+            height: 24pc;
+            
+            &:not(:first-child){
+                margin-top: 15pc;
+            }
+        }
+    }
+}
+
 

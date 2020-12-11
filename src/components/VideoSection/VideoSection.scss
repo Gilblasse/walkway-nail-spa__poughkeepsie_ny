@@ -180,3 +180,29 @@ $play: all .3s ease-in-out;
         height: 100%;
     }
 }
+
+
+
+
+
+
+// xs=540px	 s=720px	md=960px	lg=1140px
+@media only screen and (max-width: 960px) {
+    #VideoSection{
+        .vid-col1{
+            text-align: center;
+            
+            button{
+                margin: 0 auto;
+            }
+        }
+
+        h2{
+            font-size: 2rem;
+        }
+    
+        p{
+            padding-right: initial;
+        }
+    }
+}

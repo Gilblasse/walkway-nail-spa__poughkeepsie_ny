@@ -16,6 +16,8 @@ $overlap: 100;
     -webkit-filter: grayscale(100%) blur(1px) opacity(0.08) contrast(126%);
 }
 
+
+
 #menu-overlay{
     position: fixed;
     width: 100px;
@@ -103,5 +105,26 @@ $overlap: 100;
             border-radius: 5px;
 
         }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// xs=540px	 s=720px	md=960px	lg=1140px
+@media only screen and (max-width: 960px) {
+    .product-services-wrapper{
+        height: 60pc;
+    }
+
+    .walkwayBkg{
+        height: 40pc;
+        box-shadow: 25px 25px 50px 0 white inset, -25px -90px 50px 0 white inset;
     }
 }

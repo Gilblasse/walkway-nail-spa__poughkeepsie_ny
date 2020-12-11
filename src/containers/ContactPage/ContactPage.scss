@@ -79,3 +79,40 @@
     
 
 }
+
+
+
+
+// xs=540px	 s=720px	md=960px	lg=1140px
+@media only screen and (max-width: 1140px) {
+    #ContactPage{
+
+        .map-wrapper{
+            width: 80px;
+        }
+
+        .contact-wrapper{
+
+            .contact-img-box-contanier{
+                width: 200px;
+            }
+        }
+    }
+}  
+
+
+@media only screen and (max-width: 930px) {
+    #ContactPage{
+
+        .contact-wrapper{
+
+            .contact-img-box-contanier{
+                display: none;
+            }
+
+            .contact-form-container{
+                padding-left: 0;
+            }
+        }
+    }
+}  

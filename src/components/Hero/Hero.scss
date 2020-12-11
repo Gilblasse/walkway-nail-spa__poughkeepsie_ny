@@ -79,14 +79,33 @@
 }
 
 
-@media screen and (max-width: 705px) {
+@media screen and (max-width: 745px) {
     #Hero {
 
         .hero-inner-wrapper{
             flex-direction: column;
-        
+            transform: translateY(80%);
+
             .store-hours{
                 display: none;
+            }
+    
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    #Hero {
+
+        .hero-inner-wrapper{
+            transform: translateY(130%);
+        
+            .hero-main p{
+                &:first-child{
+                    font-size: 3rem;
+               
+                }
             }
     
         }
